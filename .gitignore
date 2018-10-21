@@ -1,0 +1,14 @@
+### Target ###
+*/target/**
+
+
+### Project ###
+*.project
+*.cmd
+*/.settings/**
+.classpath
+
+
+### MVN ###
+**/.mvn/**
+mvnw
