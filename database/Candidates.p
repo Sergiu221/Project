@@ -1,19 +1,19 @@
--- Table: public."Candidates"
+-- Table: public.candidates
 
- DROP TABLE public."Candidates";
+-- DROP TABLE public.candidates;
 
-CREATE TABLE public."Candidates"
+CREATE TABLE public.candidates
 (
     id bigint NOT NULL,
     first_name character varying(20) COLLATE pg_catalog."default" NOT NULL,
     middle_name character varying(20) COLLATE pg_catalog."default",
     last_name character varying(20) COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT "Candidates_pkey" PRIMARY KEY (id)
+    CONSTRAINT candidates_pkey PRIMARY KEY (id)
 )
 WITH (
     OIDS = FALSE
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public."Candidates"
+ALTER TABLE public.candidates
     OWNER to postgres;

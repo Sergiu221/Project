@@ -1,19 +1,19 @@
--- Table: public."Teachers"
+-- Table: public.teachers
 
--- DROP TABLE public."Teachers";
+-- DROP TABLE public.teachers;
 
-CREATE TABLE public."Teachers"
+CREATE TABLE public.teachers
 (
-    id bigint NOT NULL DEFAULT nextval('"Teachers_id_seq"'::regclass),
+    id bigint NOT NULL,
     first_name character varying(20) COLLATE pg_catalog."default" NOT NULL,
     middle_name character varying(20) COLLATE pg_catalog."default",
     last_name character varying(20) COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT "Teachers_pkey" PRIMARY KEY (id)
+    CONSTRAINT teachers_pkey PRIMARY KEY (id)
 )
 WITH (
     OIDS = FALSE
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public."Teachers"
+ALTER TABLE public.teachers
     OWNER to postgres;
